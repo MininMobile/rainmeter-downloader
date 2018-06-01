@@ -138,6 +138,7 @@
             // 
             // skins_Scroll
             // 
+            this.skins_Scroll.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skins_Scroll.Location = new System.Drawing.Point(336, 0);
             this.skins_Scroll.Name = "skins_Scroll";
             this.skins_Scroll.Size = new System.Drawing.Size(17, 468);

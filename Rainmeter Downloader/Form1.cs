@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,10 +12,18 @@ using System.Windows.Forms;
 
 namespace RMD {
     public partial class Menu : Form {
-        private string _DocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        private string _DocumentsPath;
+        private string[] _Skins;
 
         public Menu() {
             InitializeComponent();
+
+            _DocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            _Skins = Directory.GetFiles(_DocumentsPath, "*.*");
+
+            foreach(var file in _Skins) {
+                // Codes
+            }
         }
 
         private void button_BrowseLocal_Click(object sender, EventArgs e) {
