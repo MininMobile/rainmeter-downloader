@@ -48,6 +48,7 @@
             this.button_Browse.TabIndex = 0;
             this.button_Browse.Text = "Browse";
             this.button_Browse.UseVisualStyleBackColor = true;
+            this.button_Browse.Click += new System.EventHandler(this.button_Browse_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -97,6 +98,7 @@
             this.button_BrowseLocal.TabIndex = 1;
             this.button_BrowseLocal.Text = "Browse Local";
             this.button_BrowseLocal.UseVisualStyleBackColor = true;
+            this.button_BrowseLocal.Click += new System.EventHandler(this.button_BrowseLocal_Click);
             // 
             // button_Settings
             // 
@@ -114,6 +116,7 @@
             this.button_Settings.TabIndex = 2;
             this.button_Settings.Text = "Settings";
             this.button_Settings.UseVisualStyleBackColor = true;
+            this.button_Settings.Click += new System.EventHandler(this.button_Settings_Click);
             // 
             // Menu
             // 
