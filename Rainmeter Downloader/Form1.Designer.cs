@@ -1,5 +1,5 @@
 ﻿namespace RMD {
-    partial class Form1 {
+    partial class Menu {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -25,7 +25,7 @@
         private void InitializeComponent() {
             this.SuspendLayout();
             // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -33,7 +33,7 @@
             this.ClientSize = new System.Drawing.Size(359, 511);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.ShowIcon = false;
             this.Text = "Rainmeter Downloader";
             this.ResumeLayout(false);
