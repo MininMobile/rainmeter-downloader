@@ -26,10 +26,13 @@
             this.button_Browse = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button_BrowseLocal = new System.Windows.Forms.Button();
             this.button_Settings = new System.Windows.Forms.Button();
+            this.button_BrowseLocal = new System.Windows.Forms.Button();
+            this.skins_Container = new System.Windows.Forms.TableLayoutPanel();
+            this.skins_Scroll = new System.Windows.Forms.VScrollBar();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.skins_Container.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_Browse
@@ -55,6 +58,7 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.0195F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.skins_Container, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -82,24 +86,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(353, 31);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // button_BrowseLocal
-            // 
-            this.button_BrowseLocal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_BrowseLocal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button_BrowseLocal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.button_BrowseLocal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button_BrowseLocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_BrowseLocal.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button_BrowseLocal.Location = new System.Drawing.Point(3, 3);
-            this.button_BrowseLocal.Name = "button_BrowseLocal";
-            this.button_BrowseLocal.Size = new System.Drawing.Size(111, 25);
-            this.button_BrowseLocal.TabIndex = 1;
-            this.button_BrowseLocal.Text = "Browse Local";
-            this.button_BrowseLocal.UseVisualStyleBackColor = true;
-            this.button_BrowseLocal.Click += new System.EventHandler(this.button_BrowseLocal_Click);
-            // 
             // button_Settings
             // 
             this.button_Settings.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -118,6 +104,45 @@
             this.button_Settings.UseVisualStyleBackColor = true;
             this.button_Settings.Click += new System.EventHandler(this.button_Settings_Click);
             // 
+            // button_BrowseLocal
+            // 
+            this.button_BrowseLocal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_BrowseLocal.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_BrowseLocal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button_BrowseLocal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button_BrowseLocal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_BrowseLocal.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button_BrowseLocal.Location = new System.Drawing.Point(3, 3);
+            this.button_BrowseLocal.Name = "button_BrowseLocal";
+            this.button_BrowseLocal.Size = new System.Drawing.Size(111, 25);
+            this.button_BrowseLocal.TabIndex = 1;
+            this.button_BrowseLocal.Text = "Browse Local";
+            this.button_BrowseLocal.UseVisualStyleBackColor = true;
+            this.button_BrowseLocal.Click += new System.EventHandler(this.button_BrowseLocal_Click);
+            // 
+            // skins_Container
+            // 
+            this.skins_Container.ColumnCount = 2;
+            this.skins_Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.skins_Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.skins_Container.Controls.Add(this.skins_Scroll, 1, 0);
+            this.skins_Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.skins_Container.Location = new System.Drawing.Point(3, 40);
+            this.skins_Container.Name = "skins_Container";
+            this.skins_Container.RowCount = 1;
+            this.skins_Container.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.skins_Container.Size = new System.Drawing.Size(353, 468);
+            this.skins_Container.TabIndex = 2;
+            // 
+            // skins_Scroll
+            // 
+            this.skins_Scroll.Location = new System.Drawing.Point(336, 0);
+            this.skins_Scroll.Name = "skins_Scroll";
+            this.skins_Scroll.Size = new System.Drawing.Size(17, 468);
+            this.skins_Scroll.TabIndex = 0;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -133,6 +158,7 @@
             this.Text = "Rainmeter Downloader";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.skins_Container.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -144,6 +170,8 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button button_Settings;
         private System.Windows.Forms.Button button_BrowseLocal;
+        private System.Windows.Forms.TableLayoutPanel skins_Container;
+        private System.Windows.Forms.VScrollBar skins_Scroll;
     }
 }
 
