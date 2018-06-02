@@ -41,16 +41,16 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(393, 36);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(393, 30);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // skin_Info
             // 
             this.skin_Info.AutoSize = true;
             this.skin_Info.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skin_Info.Location = new System.Drawing.Point(151, 0);
+            this.skin_Info.Location = new System.Drawing.Point(150, 0);
             this.skin_Info.Name = "skin_Info";
-            this.skin_Info.Size = new System.Drawing.Size(239, 36);
+            this.skin_Info.Size = new System.Drawing.Size(240, 30);
             this.skin_Info.TabIndex = 1;
             this.skin_Info.Text = "[SKIN INFO]";
             this.skin_Info.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -61,7 +61,7 @@
             this.skin_Name.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skin_Name.Location = new System.Drawing.Point(3, 0);
             this.skin_Name.Name = "skin_Name";
-            this.skin_Name.Size = new System.Drawing.Size(142, 36);
+            this.skin_Name.Size = new System.Drawing.Size(141, 30);
             this.skin_Name.TabIndex = 2;
             this.skin_Name.Text = "[SKIN NAME]";
             this.skin_Name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -75,7 +75,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Name = "SkinDisplay";
-            this.Size = new System.Drawing.Size(393, 36);
+            this.Size = new System.Drawing.Size(393, 30);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

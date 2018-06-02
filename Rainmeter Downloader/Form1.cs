@@ -21,8 +21,16 @@ namespace RMD {
             _DocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             _Skins = Directory.GetFiles(_DocumentsPath, "*.*");
 
+            int y = 0;
             foreach(var file in _Skins) {
-                // Codes
+                SkinDisplay sd = new SkinDisplay(file, _DocumentsPath + file);
+
+                y += 1;
+
+                sd.Anchor = (AnchorStyles.Left | AnchorStyles.Right);
+                sd.Top = y * 30;
+
+                skins_Container.Controls.Add(sd);
             }
         }
 
