@@ -37,9 +37,15 @@ namespace RMD {
                 // Create SkinDisplay
                 SkinDisplay sd = new SkinDisplay(Path.GetFileName(_Skins[i]), _Skins[i]);
 
-                // Set SkinDisplay Options
+                // Set SkinDisplay Anchor
                 sd.Anchor = (AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right);
-                sd.Top = skipped ? (i * 30) - 30 : i * 30;
+
+                // Set SkinDisplay Position
+                if (skipped)
+                    sd.Top = (i * sd.Height) - 30;
+                else
+                    sd.Top = i * sd.Height;
+
 
                 // Add SkinDisplay to Display
                 skins_Container.Controls.Add(sd);
