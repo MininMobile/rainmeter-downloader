@@ -18,18 +18,34 @@ namespace RMD {
         public Menu() {
             InitializeComponent();
 
+            // Get Rainmeter Skins
             _RMPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Rainmeter\\Skins";
             _Skins = Directory.GetDirectories(_RMPath);
 
-            int y = -1;
-            foreach(var file in _Skins) {
-                y++;
-                SkinDisplay sd = new SkinDisplay(Path.GetFileName(file), file);
-                
-                sd.Anchor = (AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right);
-                sd.Top = y * 30;
+            // Create Loop Variables
+            int i = 0;
+            bool skipped = false;
 
+            // If @Backup Exists, skip it
+            if (Path.GetFileName(_Skins[0]) == "@Backup") {
+                skipped = true;
+
+                i++;
+            }
+            
+            while (i < _Skins.Length) {
+                // Create SkinDisplay
+                SkinDisplay sd = new SkinDisplay(Path.GetFileName(_Skins[i]), _Skins[i]);
+
+                // Set SkinDisplay Options
+                sd.Anchor = (AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right);
+                sd.Top = skipped ? (i * 30) - 30 : i * 30;
+
+                // Add SkinDisplay to Display
                 skins_Container.Controls.Add(sd);
+
+                // Iterate Loop
+                i++;
             }
         }
 
