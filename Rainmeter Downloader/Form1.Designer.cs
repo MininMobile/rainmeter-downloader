@@ -28,11 +28,12 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button_Settings = new System.Windows.Forms.Button();
             this.button_BrowseLocal = new System.Windows.Forms.Button();
-            this.skins_Container = new System.Windows.Forms.TableLayoutPanel();
+            this.skins_ContainerContainer = new System.Windows.Forms.TableLayoutPanel();
             this.skins_Scroll = new System.Windows.Forms.VScrollBar();
+            this.skins_Container = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.skins_Container.SuspendLayout();
+            this.skins_ContainerContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_Browse
@@ -58,7 +59,7 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.0195F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.skins_Container, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.skins_ContainerContainer, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -122,19 +123,20 @@
             this.button_BrowseLocal.UseVisualStyleBackColor = true;
             this.button_BrowseLocal.Click += new System.EventHandler(this.button_BrowseLocal_Click);
             // 
-            // skins_Container
+            // skins_ContainerContainer
             // 
-            this.skins_Container.ColumnCount = 2;
-            this.skins_Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.skins_Container.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 17F));
-            this.skins_Container.Controls.Add(this.skins_Scroll, 1, 0);
-            this.skins_Container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skins_Container.Location = new System.Drawing.Point(3, 40);
-            this.skins_Container.Name = "skins_Container";
-            this.skins_Container.RowCount = 1;
-            this.skins_Container.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.skins_Container.Size = new System.Drawing.Size(353, 468);
-            this.skins_Container.TabIndex = 2;
+            this.skins_ContainerContainer.ColumnCount = 2;
+            this.skins_ContainerContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.skins_ContainerContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.skins_ContainerContainer.Controls.Add(this.skins_Scroll, 1, 0);
+            this.skins_ContainerContainer.Controls.Add(this.skins_Container, 0, 0);
+            this.skins_ContainerContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.skins_ContainerContainer.Location = new System.Drawing.Point(3, 40);
+            this.skins_ContainerContainer.Name = "skins_ContainerContainer";
+            this.skins_ContainerContainer.RowCount = 1;
+            this.skins_ContainerContainer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.skins_ContainerContainer.Size = new System.Drawing.Size(353, 468);
+            this.skins_ContainerContainer.TabIndex = 2;
             // 
             // skins_Scroll
             // 
@@ -143,6 +145,14 @@
             this.skins_Scroll.Name = "skins_Scroll";
             this.skins_Scroll.Size = new System.Drawing.Size(17, 468);
             this.skins_Scroll.TabIndex = 0;
+            // 
+            // skins_Container
+            // 
+            this.skins_Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.skins_Container.Location = new System.Drawing.Point(3, 3);
+            this.skins_Container.Name = "skins_Container";
+            this.skins_Container.Size = new System.Drawing.Size(330, 462);
+            this.skins_Container.TabIndex = 1;
             // 
             // Menu
             // 
@@ -159,7 +169,7 @@
             this.Text = "Rainmeter Downloader";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.skins_Container.ResumeLayout(false);
+            this.skins_ContainerContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -171,8 +181,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button button_Settings;
         private System.Windows.Forms.Button button_BrowseLocal;
-        private System.Windows.Forms.TableLayoutPanel skins_Container;
+        private System.Windows.Forms.TableLayoutPanel skins_ContainerContainer;
         private System.Windows.Forms.VScrollBar skins_Scroll;
+        private System.Windows.Forms.Panel skins_Container;
     }
 }
 

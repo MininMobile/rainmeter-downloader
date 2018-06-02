@@ -20,7 +20,7 @@ namespace RMD {
             this.skinpath = skinpath;
             this.skinname = skinname;
 
-            this.skin_Name.Text = "Skin";
+            this.skin_Name.Text = skinname;
             this.skin_Info.Text = "Skin Info";
         }
 
