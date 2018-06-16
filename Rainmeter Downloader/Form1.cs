@@ -14,6 +14,7 @@ namespace RMD {
     public partial class Menu : Form {
         private string _RMPath;
         private string[] _Skins;
+        private SkinDisplay _SkinDisplay = new SkinDisplay(0, "Example Skin", "C:\\");
 
         public Menu() {
             InitializeComponent();
@@ -34,18 +35,20 @@ namespace RMD {
             }
             
             while (i < _Skins.Length) {
-                // Create SkinDisplay
-                SkinDisplay sd = new SkinDisplay(Path.GetFileName(_Skins[i]), _Skins[i]);
-
-                // Set SkinDisplay Anchor
-                sd.Anchor = (AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right);
+                // Create SkinDisplay Origin
+                int origin = 0;
 
                 // Set SkinDisplay Position
                 if (skipped)
-                    sd.Top = (i * sd.Height) - 30;
+                    origin = (i * _SkinDisplay.Height) - _SkinDisplay.Height;
                 else
-                    sd.Top = i * sd.Height;
+                    origin = i * _SkinDisplay.Height;
 
+                // Create SkinDisplay
+                SkinDisplay sd = new SkinDisplay(origin, Path.GetFileName(_Skins[i]), _Skins[i]);
+
+                // Set SkinDisplay Anchor
+                sd.Anchor = (AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right);
 
                 // Add SkinDisplay to Display
                 skins_Container.Controls.Add(sd);
