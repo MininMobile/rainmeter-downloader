@@ -145,6 +145,7 @@
             this.skins_Scroll.Name = "skins_Scroll";
             this.skins_Scroll.Size = new System.Drawing.Size(17, 468);
             this.skins_Scroll.TabIndex = 0;
+            this.skins_Scroll.Scroll += new System.Windows.Forms.ScrollEventHandler(this.skins_Scroll_Scroll);
             // 
             // skins_Container
             // 

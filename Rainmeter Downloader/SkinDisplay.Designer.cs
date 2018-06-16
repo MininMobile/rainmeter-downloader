@@ -59,7 +59,7 @@
             // skin_Name
             // 
             this.skin_Name.AutoSize = true;
-            this.skin_Name.Cursor = System.Windows.Forms.Cursors.Default;
+            this.skin_Name.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.skin_Name.Dock = System.Windows.Forms.DockStyle.Fill;
             this.skin_Name.Location = new System.Drawing.Point(3, 0);
             this.skin_Name.Name = "skin_Name";

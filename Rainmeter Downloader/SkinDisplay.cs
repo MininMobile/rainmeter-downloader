@@ -27,6 +27,10 @@ namespace RMD {
             this.Top = origin;
         }
 
+        public void UpdatePosition(int offset) {
+            this.Top = origin + offset;
+        }
+
         private void skin_Name_Click(object sender, EventArgs e) {
             Process.Start(skinpath);
         }

@@ -58,6 +58,12 @@ namespace RMD {
             }
         }
 
+        private void skins_Scroll_Scroll(object sender, ScrollEventArgs e) {
+            foreach (SkinDisplay sd in skins_Container.Controls) {
+                sd.UpdatePosition(skins_Scroll.Value);
+            }
+        }
+
         private void button_BrowseLocal_Click(object sender, EventArgs e) {
             Process.Start(_RMPath);
         }
