@@ -28,7 +28,7 @@ namespace RMD {
         }
 
         public void UpdatePosition(int offset) {
-            this.Top = origin - (offset / 4 * this.Height);
+            this.Top = origin - offset * 5;
         }
 
         private void skin_Name_Click(object sender, EventArgs e) {

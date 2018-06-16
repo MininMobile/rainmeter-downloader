@@ -29,12 +29,12 @@ namespace RMD {
 
             // If @Backup Exists, skip it
             if (Path.GetFileName(_Skins[0]) == "@Backup") {
-                skins_Scroll.Maximum = (_Skins.Length - 1) * 10;
+                skins_Scroll.Maximum = (_Skins.Length - 1) * 2;
                 skipped = true;
 
                 i++;
             } else {
-                skins_Scroll.Maximum = _Skins.Length * 10;
+                skins_Scroll.Maximum = _Skins.Length * 2;
             }
             
             while (i < _Skins.Length) {
