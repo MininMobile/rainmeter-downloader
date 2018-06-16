@@ -14,9 +14,8 @@ namespace RMD {
             InitializeComponent();
         }
 
-        public DialogResult Open() {
+        public void Open() {
             ShowDialog();
-            return DialogResult.Cancel;
         }
     }
 }
